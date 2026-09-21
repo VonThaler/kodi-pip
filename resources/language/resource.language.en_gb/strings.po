@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: service.pip\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "#30000"
+msgid "General"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Path to mpv (leave empty to auto-detect)"
+msgstr ""
+
+msgctxt "#30002"
+msgid "PiP window corner"
+msgstr ""
+
+msgctxt "#30003"
+msgid "PiP window size (% of screen)"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Pause Kodi while PiP is open"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Resume Kodi at the PiP position when PiP closes"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Extra mpv arguments (advanced)"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Bottom right"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Bottom left"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Top right"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Top left"
+msgstr ""
