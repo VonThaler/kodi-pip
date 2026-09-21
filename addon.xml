@@ -1,67 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<settings version="1">
-  <section id="service.pip">
-    <category id="general" label="30000">
-      <group id="1">
-        <setting id="mpv_path" type="path" label="30001">
-          <level>0</level>
-          <default></default>
-          <constraints>
-            <writable>false</writable>
-            <allowempty>true</allowempty>
-          </constraints>
-          <control type="button" format="file">
-            <heading>30001</heading>
-          </control>
-        </setting>
-        <setting id="corner" type="integer" label="30002">
-          <level>0</level>
-          <default>0</default>
-          <constraints>
-            <options>
-              <option label="30010">0</option>
-              <option label="30011">1</option>
-              <option label="30012">2</option>
-              <option label="30013">3</option>
-            </options>
-          </constraints>
-          <control type="list" format="string">
-            <heading>30002</heading>
-          </control>
-        </setting>
-        <setting id="size" type="integer" label="30003">
-          <level>0</level>
-          <default>25</default>
-          <constraints>
-            <minimum>10</minimum>
-            <step>5</step>
-            <maximum>60</maximum>
-          </constraints>
-          <control type="slider" format="percentage">
-            <popup>false</popup>
-          </control>
-        </setting>
-        <setting id="pause_kodi" type="boolean" label="30004">
-          <level>0</level>
-          <default>true</default>
-          <control type="toggle"/>
-        </setting>
-        <setting id="resume_kodi" type="boolean" label="30005">
-          <level>0</level>
-          <default>true</default>
-          <control type="toggle"/>
-        </setting>
-        <setting id="extra_args" type="string" label="30006">
-          <level>0</level>
-          <default></default>
-          <constraints>
-            <allowempty>true</allowempty>
-          </constraints>
-          <control type="edit" format="string">
-            <heading>30006</heading>
-          </control>
-        </setting>
-      </group>
-    </category>
-  </section>
-</settings>
+<addon id="service.pip" name="Picture in Picture" version="1.1.0" provider-name="local">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Shift+P pops the playing stream out into a floating, always-on-top window</summary>
+    <description lang="en_GB">Press Shift+P while a video stream is playing to continue it in a small borderless mpv window that floats above every other window without stealing keyboard focus. The same window stays in place when Kodi auto-plays the next episode. Press Shift+P in Kodi again (or middle-click the PiP window) to close it. Requires mpv to be installed.</description>
+    <platform>windows linux osx</platform>
+    <license>GPL-2.0-or-later</license>
+    <news>1.1.0 - One PiP window persists across episodes (auto-play next), Kodi is muted instead of paused by default
+1.0.0 - Initial release</news>
+  </extension>
+</addon>
