@@ -41,10 +41,30 @@
             <popup>false</popup>
           </control>
         </setting>
-        <setting id="pause_kodi" type="boolean" label="30004">
+        <setting id="kodi_mode" type="integer" label="30004">
           <level>0</level>
-          <default>true</default>
-          <control type="toggle"/>
+          <default>0</default>
+          <constraints>
+            <options>
+              <option label="30020">0</option>
+              <option label="30021">1</option>
+            </options>
+          </constraints>
+          <control type="list" format="string">
+            <heading>30004</heading>
+          </control>
+        </setting>
+        <setting id="grace" type="integer" label="30007">
+          <level>0</level>
+          <default>12</default>
+          <constraints>
+            <minimum>3</minimum>
+            <step>1</step>
+            <maximum>60</maximum>
+          </constraints>
+          <control type="slider" format="integer">
+            <popup>false</popup>
+          </control>
         </setting>
         <setting id="resume_kodi" type="boolean" label="30005">
           <level>0</level>

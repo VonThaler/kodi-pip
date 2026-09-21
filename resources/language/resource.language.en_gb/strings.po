@@ -23,11 +23,11 @@ msgid "PiP window size (% of screen)"
 msgstr ""
 
 msgctxt "#30004"
-msgid "Pause Kodi while PiP is open"
+msgid "While PiP is open, Kodi should"
 msgstr ""
 
 msgctxt "#30005"
-msgid "Resume Kodi at the PiP position when PiP closes"
+msgid "When PiP closes, resume Kodi from the PiP position"
 msgstr ""
 
 msgctxt "#30006"
@@ -48,4 +48,16 @@ msgstr ""
 
 msgctxt "#30013"
 msgid "Top left"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Seconds to wait for the next episode before closing PiP"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Mute and keep playing (needed for auto-play next episode)"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Pause (no auto-play)"
 msgstr ""
